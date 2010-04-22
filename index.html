@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jqetris</title>
+<script type="text/javascript" src="scripts/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="scripts/jquery.jqetris.js"></script>
+<style type="text/css">
+
+	.main {
+		position:relative;
+		width: 300px;
+		height: 600px;
+		background-color: #374049;
+	}
+	.piece_i {
+		background-color: #00f0f0;
+		border-top-color: #b3fbfb;
+		border-bottom-color: #007878;
+		border-left-color: #00d8d8;
+		border-right-color: #00d8d8;
+	}
+	.piece {
+		position:absolute;
+		width:22px;
+		height:22px;
+		border-style:solid;
+		border-width:4px;
+	}
+	.piece_j {
+		background-color: #0000f0;
+		border-top-color: #b3b3fb;
+		border-bottom-color: #000078;
+		border-left-color: #0000d8;
+		border-right-color: #0000d8;
+	}
+	.piece_l {
+		background-color: #f0a000;
+		border-top-color: #fbe3b3;
+		border-bottom-color: #785000;
+		border-left-color: #d89000;
+		border-right-color: #d89000;
+	}
+	.piece_o {
+		background-color: #f0f000;
+		border-top-color: #fbfbb3;
+		border-bottom-color: #787800;
+		border-left-color: #d8d800;
+		border-right-color: #d8d800;
+	}
+	.piece_t {
+		background-color: #a000f0;
+		border-top-color: #e3b3fb;
+		border-bottom-color: #500078;
+		border-left-color: #9000d8;
+		border-right-color: #9000d8;
+	}
+	.piece_z {
+		background-color: #f00000;
+		border-top-color: #fbb3b3;
+		border-bottom-color: #780000;
+		border-left-color: #d80000;
+		border-right-color: #d80000;
+	}
+	.piece_s {
+		background-color: #00f000;
+		border-top-color: #b3fbb3;
+		border-bottom-color: #007800;
+		border-left-color: #00d800;
+		border-right-color: #00d800;
+	}
+</style>
+</head>
+<body>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		new jqetris('#main');
+	});
+	</script>
+<div id="main" class="main"></div>
+<div id="points"></div>
+<div id="level"></div>
+</body>
+</html>
